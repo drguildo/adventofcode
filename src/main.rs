@@ -11,8 +11,10 @@ fn main() {
 
     let day2_input = load_input("day2.txt");
     let day2_part1_solution = day2::day2_part1(&day2_input);
+    let day2_part2_solution = day2::day2_part2(&day2_input);
 
     println!("Day 2, Part 1: {}", day2_part1_solution);
+    println!("Day 2, Part 2: {}", day2_part2_solution);
 }
 
 fn load_input(input_path: &str) -> Vec<String> {
