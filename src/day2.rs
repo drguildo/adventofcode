@@ -1,4 +1,4 @@
-pub fn day2_part1(input: &Vec<String>) -> i32 {
+pub fn day2_part1(input: &[String]) -> i32 {
     let mut depth = 0;
     let mut horizontal = 0;
 
@@ -26,7 +26,7 @@ pub fn day2_part1(input: &Vec<String>) -> i32 {
     depth * horizontal
 }
 
-pub fn day2_part2(input: &Vec<String>) -> i32 {
+pub fn day2_part2(input: &[String]) -> i32 {
     let mut aim = 0;
     let mut depth = 0;
     let mut horizontal = 0;

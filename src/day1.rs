@@ -1,4 +1,4 @@
-fn count_increases(nums: &Vec<i32>) -> u16 {
+fn count_increases(nums: &[i32]) -> u16 {
     let mut input_iter = nums.iter();
 
     let mut increases = 0;
@@ -12,12 +12,12 @@ fn count_increases(nums: &Vec<i32>) -> u16 {
     increases
 }
 
-pub fn day1_part1(input: &Vec<String>) -> u16 {
+pub fn day1_part1(input: &[String]) -> u16 {
     let input_nums: Vec<i32> = input.iter().map(|l| l.parse::<i32>().unwrap()).collect();
     count_increases(&input_nums)
 }
 
-pub fn day1_part2(input: &Vec<String>) -> u16 {
+pub fn day1_part2(input: &[String]) -> u16 {
     let input_nums: Vec<i32> = input.iter().map(|l| l.parse::<i32>().unwrap()).collect();
 
     let mut sliding_windows: Vec<Vec<i32>> = Vec::new();
