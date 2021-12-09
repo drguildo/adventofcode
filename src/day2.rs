@@ -3,7 +3,7 @@ pub fn day2_part1(input: &Vec<String>) -> i32 {
     let mut horizontal = 0;
 
     for line in input.iter() {
-        let split: Vec<&str> = line.split(" ").collect();
+        let split: Vec<&str> = line.split(' ').collect();
         if split.len() != 2 {
             eprintln!("Invalid input: {}", line);
             return 0;
@@ -32,7 +32,7 @@ pub fn day2_part2(input: &Vec<String>) -> i32 {
     let mut horizontal = 0;
 
     for line in input.iter() {
-        let split: Vec<&str> = line.split(" ").collect();
+        let split: Vec<&str> = line.split(' ').collect();
         if split.len() != 2 {
             eprintln!("Invalid input: {}", line);
             return 0;
