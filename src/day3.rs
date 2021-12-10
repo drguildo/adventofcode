@@ -18,7 +18,7 @@ pub fn day3_part1(input: &[String]) -> u32 {
             gamma += 1;
         }
     }
-    let epsilon = !gamma & !(!0 << 12);
+    let epsilon = !gamma & 0xFFF;
 
     gamma * epsilon
 }
