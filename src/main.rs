@@ -25,7 +25,7 @@ fn main() {
     println!("Day 3, Part 1: {}", day3_part1_solution);
     println!("Day 3, Part 2: {}", day3_part2_solution);
 
-    let day4_input = load_input("day4.txt");
+    let day4_input = load_input("day4_example.txt");
 
     day4::day4_part1(&day4_input);
 }
