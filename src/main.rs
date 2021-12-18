@@ -3,6 +3,7 @@ use std::io::Read;
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 fn main() {
     let day1_input = load_input("day1.txt");
@@ -23,6 +24,10 @@ fn main() {
 
     println!("Day 3, Part 1: {}", day3_part1_solution);
     println!("Day 3, Part 2: {}", day3_part2_solution);
+
+    let day4_input = load_input("day4.txt");
+
+    day4::day4_part1(&day4_input);
 }
 
 fn load_input(input_path: &str) -> Vec<String> {
